@@ -1,18 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlPantallas : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+    public void Función1()
     {
-        
+        SceneManager.LoadScene("Catalogo");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Función2()
     {
-        
+        SceneManager.LoadScene("CortaYReparte");
+    }
+
+
+
+    public void Salir()
+    {
+        Debug.Log("");
+        Application.Quit(); //Salir del Juego
     }
 }
